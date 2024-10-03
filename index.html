@@ -6,7 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>nie Drugi</h2>
-    <h3>trzeci</h3>
+    <h1 id="add">0</h1>
+    <button onclick="dodawanie()">Dodaj</button>
+    <script>
+        let liczba = document.getElementById("add");
+        let aktualnaLiczba = parseInt(liczba.innerHTML);
+
+        function dodawanie() {
+            aktualnaLiczba += 1;
+            liczba.innerHTML = aktualnaLiczba;
+        }
+    </script>
 </body>
 </html>
